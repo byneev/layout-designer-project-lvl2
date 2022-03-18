@@ -7,6 +7,7 @@ $c-green: #34C176;
 $c-orange: #F89202;
 $c-purple: #5328A1;
 $c-red: #95390C;
+$c-white: #ffffff;
 // typography
 $f-size-default: 16px;
 $f-weigth-default: normal;
@@ -14,8 +15,12 @@ $f-line-height-coeff: 1.5;
 $f-family-default: 'Roboto', sans-serif;
 $f-decoration: none;
 $f-transform: none;
-// layout
+
 $m-right-s: 16px;
 $m-right-m: 24px;
 $m-bottom-s: 16px;
-$m-bottom-m: 30px; 
+$m-bottom-m: 30px;
+
+$mobile-size: 414px;
+$desktop-size: 1240px;
+$container-width: 1200px;

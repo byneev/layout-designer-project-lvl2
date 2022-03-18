@@ -1,0 +1,109 @@
+@use "sass:math";
+@import "../mixins.scss";
+@import "../variables.scss";
+
+$search-width: 248px;
+$anchors: ("Главная", "Каталог", "Исполнители", "Контакты");
+$colors: ($c-gray, $c-dark-gray, $c-white);
+
+.main-header {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  background: transparent;
+}
+
+.main-header .container {
+  background: transparent;
+  @media (min-width: 1240px) {
+    max-width: 1200px;
+  }
+}
+
+.main-nav {
+  @include flex-standart;
+  justify-content: space-between;
+  @media (max-width: 414px) {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.main-nav-list {
+  @include reset;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  @media (min-width: 415px) {
+    flex-basis: 100 - math.div(100 * $search-width, $container-width);
+  }
+  @media (max-width: 414px) {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 20px;
+  }
+}
+
+.main-nav-list-item a {
+  @include tipography(11px, normal, uppercase, none);
+  display: block;
+  margin-right: $m-right-m;
+  color: $c-white;
+  @media (max-width: 414px) {
+    margin-right: 0;
+  }
+}
+
+@for $i from 1 to length($anchors) {
+  .main-nav-list-item:nth-child(#{$i}) a {
+    @media (max-width: 414px) {
+      color: nth($colors, random(length($colors)));
+    }
+  }  
+}
+
+.main-nav-list-item--home {
+  position: relative;
+  margin-right: 90px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+
+  &::before {
+    @include pseudo-element;
+    background-image: url("../images/logo.svg");
+    width: 24px;
+    height: 24px;
+    top: -6px;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+.search-form {
+  @include reset;
+  width: $search-width;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  @media (max-width: 414px) {
+    width: 100%;
+  }
+}
+
+.search-form-input {
+  @include reset;
+  @include tipography(13px, normal, uppercase, none, 1.1);
+  box-sizing: border-box;
+  padding: 5px 10px;
+  border-radius: 50px;
+  background-color: $c-dark-gray;
+  width: 100%;
+  @media (max-width: 414px) {
+    display: block;
+  }
+}
+
+.search-form-input::placeholder {
+  color: $c-gray;
+}

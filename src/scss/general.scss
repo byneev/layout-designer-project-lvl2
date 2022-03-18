@@ -1,0 +1,54 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+body {
+  @include reset;
+  @include tipography(); 
+}
+
+h1 {
+  @media (max-width: 414px) {
+    @include h1-mobile();
+  }
+  @media (min-width: 415px) {
+    @include h1-desktop();
+  }
+}
+
+h2 {
+  @media (max-width: 414px) {
+    @include h1plus-mobile();
+  }
+  @media (min-width: 415px) {
+    @include h2-desktop();
+  }
+}
+
+h3 {
+  @media (max-width: 414px) {
+    @include h1plus-mobile();
+  }
+  @media (min-width: 415px) {
+    @include h3-desktop();
+  }
+}
+
+h4 {
+  @media (max-width: 414px) {
+    @include h1plus-mobile();
+  }
+  @media (min-width: 415px) {
+    @include h4-desktop();
+  }
+}
+
+.container {
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.text-hidden {
+  font-size: 0;
+}

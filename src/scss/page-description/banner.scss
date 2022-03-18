@@ -1,0 +1,91 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+.banner .container {
+  @include flex-standart;
+  flex-direction: column;
+  align-items: center;
+  color: $c-white;
+}
+
+.banner-heading, .banner-subheading {
+  @include reset;
+  color: $c-white;
+}
+
+.banner-heading {
+  @media (max-width: 414px) {
+    @include tipography(30px, bold, uppercase);
+    @include flex-standart;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.banner-subheading {
+  @media (max-width: 414px) {
+    @include tipography(18px, bold, uppercase);   
+    margin-bottom: 16px;
+  }
+}
+
+
+.banner-subheading {
+  margin-bottom: 30px;
+  @media (max-width: 414px) {
+    margin-bottom: 15px;
+  }
+}
+
+.banner-text {
+  @include reset;
+  margin-bottom: 16px;
+}
+
+.banner-login {
+  @include reset;
+  width: 565px;
+  @media (max-width: 414px) {
+    width: 100%;
+  }
+}
+
+.banner-input-wrapper {
+  @include flex-standart;
+  justify-content: space-between;
+  @media (max-width: 414px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.banner-login-field {
+  @include reset;
+  box-sizing: border-box;
+  width: 270px;
+  min-height: 50px;
+  padding-left: 20px;
+  margin-bottom: 1.5rem;
+  border: 2px solid $c-gray;
+  border-radius: 3px;
+  background: transparent;
+  @media (max-width: 414px) {
+    width: 100%;
+  }
+}
+
+.banner-login-field::placeholder {
+  @include tipography(14px, bold, none, none, 1.1);
+  color: $c-white;
+}
+
+.btn-banner {
+  @include tipography(13px, normal, uppercase, none, 1.2);
+  @include flex-standart;
+  justify-content: center;
+  align-items: center;
+  width: 100%;  
+  padding: 20px 30px;
+  border-radius: 5px;
+  background-color: $c-green;
+  color: $c-white;
+}

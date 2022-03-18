@@ -2,7 +2,7 @@
 
 @mixin tipography(
   $font-size: $f-size-default, 
-  $font-weight: $f-weight-default,
+  $font-weight: $f-weigth-default,
   $text-transform: $f-transform,
   $text-decoration: $f-decoration,
   $line-height-coeff: $f-line-height-coeff, 
@@ -12,6 +12,8 @@
   font-size: $font-size;
   line-height: $font-size * $f-line-height-coeff;
   font-weight: $font-weight;
+  text-transform: $text-transform;
+  text-decoration: $text-decoration;
 }
 
 @mixin h1-desktop($color: $c-dark) {
@@ -49,7 +51,32 @@
   color: $color;
 }
 
+@mixin  h1-mobile($color: $c-dark) {
+  @include tipography(30px, normal, uppercase);
+  color: $color;
+}
+
+@mixin h1plus-mobile($color: $c-dark) {
+  @include tipography(18px, normal, uppercase);
+  color: $color;
+}
+
 @mixin flex-standart {
   display: flex;
   flex-wrap: nowrap;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+@mixin pseudo-element {
+  content: "";
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
