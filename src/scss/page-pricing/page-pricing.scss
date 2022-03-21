@@ -20,6 +20,7 @@
   grid-template-rows: max-content;
   gap: 50px;
   margin-bottom: 40px;
+  overflow-x: hidden;
   @media (max-width: 414px) {
     display: block;
   }

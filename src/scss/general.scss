@@ -61,6 +61,7 @@ h4 {
 .btn {
   @include tipography(13px, normal, uppercase, none, 1.2);
   @include flex-standart;
+  box-sizing: border-box;
   justify-content: center;
   align-items: center;
   padding: 20px 30px;
