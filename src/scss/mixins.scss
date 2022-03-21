@@ -10,53 +10,53 @@
   ) {
   font-family: $font-family;
   font-size: $font-size;
-  line-height: $font-size * $f-line-height-coeff;
+  line-height: $font-size * $line-height-coeff;
   font-weight: $font-weight;
   text-transform: $text-transform;
   text-decoration: $text-decoration;
 }
 
-@mixin h1-desktop($color: $c-dark) {
+@mixin h1-desktop($color: $c-white) {
   @include tipography(60px, bold, uppercase);
   color: $color;
 }
 
-@mixin h2-desktop($color: $c-dark) {
+@mixin h2-desktop($color: $c-white) {
   @include tipography(38px, bold, uppercase);
   color: $color;
 }
 
-@mixin h3-desktop($color: $c-dark) {
+@mixin h3-desktop($color: $c-white) {
   @include tipography(24px, normal, none, none, 1.9);
   color: $color;
 }
 
-@mixin h3-desktop-cap($color: $c-dark) {
+@mixin h3-desktop-cap($color: $c-white) {
   @include tipography(24px, normal, none, none, 1.9);
   color: $color;
 }
 
-@mixin h3-desktop-cap-b($color: $c-dark) {
+@mixin h3-desktop-cap-b($color: $c-white) {
   @include tipography(24px, bold, lowercase, none, 1.9);
   color: $color;
 }
 
-@mixin h4-desktop($color: $c-dark) {
+@mixin h4-desktop($color: $c-white) {
   @include tipography(18px, bold, uppercase);
   color: $color;
 }
 
-@mixin h4-desktop-cap-b($color: $c-dark) {
+@mixin h4-desktop-cap-b($color: $c-white) {
   @include tipography(18px, bold, lowercase);
   color: $color;
 }
 
-@mixin  h1-mobile($color: $c-dark) {
+@mixin  h1-mobile($color: $c-white) {
   @include tipography(30px, normal, uppercase);
   color: $color;
 }
 
-@mixin h1plus-mobile($color: $c-dark) {
+@mixin h1plus-mobile($color: $c-white) {
   @include tipography(18px, normal, uppercase);
   color: $color;
 }

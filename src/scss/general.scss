@@ -3,7 +3,8 @@
 
 body {
   @include reset;
-  @include tipography(); 
+  @include tipography();
+  color: $c-white; 
 }
 
 h1 {
@@ -47,8 +48,21 @@ h4 {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+  background: transparent;
+  @media (min-width: 1240px) {
+    max-width: 1200px;
+  }
 }
 
 .text-hidden {
   font-size: 0;
+}
+
+.btn {
+  @include tipography(13px, normal, uppercase, none, 1.2);
+  @include flex-standart;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 5px;
 }

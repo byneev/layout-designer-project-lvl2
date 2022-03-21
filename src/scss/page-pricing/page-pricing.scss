@@ -1,0 +1,32 @@
+@import '../variables.scss';
+
+#page-pricing {
+  background: $c-black;
+  padding-top: 100px;
+}
+
+.page-pricing-heading {
+  @include reset;
+  @include tipography(38px, bold, uppercase);
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.page-pricing-list {
+  @include reset;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: max-content;
+  gap: 50px;
+  margin-bottom: 40px;
+  @media (max-width: 414px) {
+    display: block;
+  }
+}
+
+.page-pricing-info {
+  @include reset;
+  @include tipography(16px, normal, none);
+  text-align: center;
+}

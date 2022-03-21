@@ -13,25 +13,16 @@
 }
 
 .banner-heading {
+  text-align: center;
   @media (max-width: 414px) {
     @include tipography(30px, bold, uppercase);
-    @include flex-standart;
-    justify-content: center;
-    align-items: center;
   }
 }
-
-.banner-subheading {
-  @media (max-width: 414px) {
-    @include tipography(18px, bold, uppercase);   
-    margin-bottom: 16px;
-  }
-}
-
 
 .banner-subheading {
   margin-bottom: 30px;
   @media (max-width: 414px) {
+    @include tipography(18px, bold, uppercase);   
     margin-bottom: 15px;
   }
 }
@@ -68,6 +59,7 @@
   border: 2px solid $c-gray;
   border-radius: 3px;
   background: transparent;
+  color: $c-white;
   @media (max-width: 414px) {
     width: 100%;
   }
@@ -79,13 +71,7 @@
 }
 
 .btn-banner {
-  @include tipography(13px, normal, uppercase, none, 1.2);
-  @include flex-standart;
-  justify-content: center;
-  align-items: center;
   width: 100%;  
-  padding: 20px 30px;
-  border-radius: 5px;
   background-color: $c-green;
   color: $c-white;
 }

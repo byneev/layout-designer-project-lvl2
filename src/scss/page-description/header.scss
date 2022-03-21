@@ -15,13 +15,6 @@ $colors: ($c-gray, $c-dark-gray, $c-white);
   background: transparent;
 }
 
-.main-header .container {
-  background: transparent;
-  @media (min-width: 1240px) {
-    max-width: 1200px;
-  }
-}
-
 .main-nav {
   @include flex-standart;
   justify-content: space-between;
