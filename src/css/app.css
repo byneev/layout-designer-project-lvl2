@@ -118,7 +118,7 @@ body {
 }
 
 .text-hidden {
-  font-size: 0;
+  font-size: 0 !important;
 }
 
 .btn {
@@ -804,4 +804,137 @@ body {
   background: #95390C;
   border-radius: 32px;
   display: inline-block;
+}
+
+.main-footer {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+  padding-top: 60px;
+}
+
+.main-footer a {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: none;
+  text-decoration: none;
+  color: #E0E0E0;
+}
+
+.main-footer ul, li, p, h4 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+}
+
+@media (max-width: 414px) {
+  .about-nav, .support-nav, .contacts, .social {
+    margin-bottom: 30px;
+  }
+}
+
+.main-footer h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.footer-body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+  margin-bottom: 70px;
+}
+@media (max-width: 414px) {
+  .footer-body {
+    display: block;
+  }
+}
+
+.main-footer .social-list {
+  display: flex;
+}
+
+.social-item {
+  display: block;
+  font-size: 0;
+  width: 26px;
+  height: 26px;
+  margin-right: 12px;
+}
+.social-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 0;
+  background-repeat: no-repeat;
+}
+
+.social-item--gl {
+  position: relative;
+}
+.social-item--gl::before {
+  background: url("../images/Google+.png");
+  width: 26px;
+  height: 17px;
+}
+
+.social-item--tw {
+  position: relative;
+}
+.social-item--tw::before {
+  background: url("../images/Twitter.png");
+  width: 22px;
+  height: 19px;
+}
+
+.social-item--fb {
+  position: relative;
+  margin-right: 8px;
+}
+.social-item--fb::before {
+  background: url("../images/Facebook.png");
+  width: 12px;
+  height: 20px;
+}
+
+.social-item--inst {
+  position: relative;
+}
+.social-item--inst::before {
+  background: url("../images/Instagram.png");
+  width: 19px;
+  height: 20px;
+}
+
+.footer-nav {
+  border-top: 1px solid #E0E0E0;
+}
+
+.main-footer .footer-nav-list {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+@media (max-width: 414px) {
+  .main-footer .footer-nav-list {
+    flex-direction: column;
+  }
+}
+
+.footer-nav-list-item {
+  margin-right: 16px;
+}
+@media (max-width: 414px) {
+  .footer-nav-list-item {
+    margin-bottom: 16px;
+  }
 }
