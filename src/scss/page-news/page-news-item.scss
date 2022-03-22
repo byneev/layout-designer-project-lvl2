@@ -37,15 +37,15 @@
   padding-left: 35px;
   margin-right: 16px;
   color: $c-orange;
-}
 
-.news-item-author::before {
-  @include pseudo-element;
-  top: 0;
-  background: url("../images/avatar.png");
-  border-radius: 50%;
-  width: 19px;
-  height: 19px;
+  &::before {
+    @include pseudo-element;
+    top: 0;
+    background: url("../images/avatar.png");
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+  }
 }
 
 .news-item-date {

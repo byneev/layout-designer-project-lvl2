@@ -212,19 +212,19 @@ body {
 
 @media (max-width: 414px) {
   .main-nav-list-item:nth-child(1) a {
-    color: #ffffff;
+    color: #E0E0E0;
   }
 }
 
 @media (max-width: 414px) {
   .main-nav-list-item:nth-child(2) a {
-    color: #ffffff;
+    color: #E0E0E0;
   }
 }
 
 @media (max-width: 414px) {
   .main-nav-list-item:nth-child(3) a {
-    color: #E0E0E0;
+    color: #ffffff;
   }
 }
 
@@ -568,7 +568,6 @@ body {
 
 #page-news {
   padding-top: 100px;
-  padding-bottom: 100px;
   background: #08020D;
 }
 
@@ -686,7 +685,6 @@ body {
   margin-right: 16px;
   color: #F89202;
 }
-
 .news-item-author::before {
   content: "";
   display: block;
@@ -719,4 +717,91 @@ body {
   padding: 16px 30px;
   color: #CACACA;
   border: 1px solid #CACACA;
+}
+
+#page-app {
+  padding-top: 100px;
+  background: #08020D;
+  background-image: url("../images/iphone.png");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+@media (max-width: 414px) {
+  #page-app {
+    background-position: center 160px;
+  }
+}
+
+#page-app .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(278px, max-content);
+}
+@media (max-width: 414px) {
+  #page-app .container {
+    display: block;
+  }
+}
+
+.app-content {
+  padding-bottom: 100px;
+}
+
+.app-heading {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 38px;
+  line-height: 57px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 65px;
+  text-align: center;
+}
+@media (max-width: 414px) {
+  .app-heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 340px;
+  }
+}
+
+.app-text {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: none;
+  text-decoration: none;
+  color: #CACACA;
+  margin-bottom: 20px;
+}
+
+.app-text:last-child {
+  margin-bottom: 0;
+}
+
+.btn-app {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 19.5px;
+  font-weight: normal;
+  text-transform: none;
+  text-decoration: none;
+  padding: 16px 40px;
+  color: #ffffff;
+  background: #95390C;
+  border-radius: 32px;
+  display: inline-block;
 }
