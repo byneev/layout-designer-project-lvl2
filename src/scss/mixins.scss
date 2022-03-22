@@ -80,3 +80,8 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+@mixin adaptive-img {
+  width: 100%;
+  height: auto;
+}

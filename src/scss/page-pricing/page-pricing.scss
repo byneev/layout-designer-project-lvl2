@@ -17,7 +17,7 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: max-content;
+  grid-auto-rows: 1fr;
   gap: 50px;
   margin-bottom: 40px;
   overflow-x: hidden;
