@@ -1,0 +1,24 @@
+.discography-item-img {
+  margin-bottom: 18px;
+  max-width: 250px;
+  height: auto;
+  @media (max-width: 414px) {
+    max-width: 137px;
+  }
+}
+
+.discography-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.discography-text-song {
+  @include tipography(18px, bold, none, none);
+  color: $c-white;
+}
+
+.discography-text-year {
+  @include tipography(16px, normal, none, none);
+  color: $c-gray;
+}

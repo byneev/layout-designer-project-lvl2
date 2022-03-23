@@ -7,10 +7,9 @@
   @include reset;
   @include tipography(38px, bold, uppercase);
   margin-bottom: 48px;
-  text-align: center;
+  text-align: left;
   @media (max-width: 414px) {
     @include tipography(18px, bold, uppercase);
-    text-align: left;
   }
 }
 

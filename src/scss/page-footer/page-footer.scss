@@ -28,6 +28,10 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 40px;
   margin-bottom: 70px;
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(auto-fill, 200px);
+    row-gap: 20px;
+  }
   @media (max-width: 414px) {
     display: block;
   }
@@ -97,6 +101,7 @@
 
 .main-footer .footer-nav-list {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 40px;
   padding-bottom: 50px;
   @media (max-width: 414px) {
