@@ -1,0 +1,42 @@
+#page-polular-track {
+  padding-top: 100px;
+  background: $c-black;
+}
+
+.page-tracks-heading {
+  @include reset;
+  @include tipography(38px, bold, uppercase);
+  margin-bottom: 48px;
+  text-align: center;
+  @media (max-width: 414px) {
+    @include tipography(18px, bold, uppercase);
+    text-align: left;
+  }
+}
+
+.page-tracks-list {
+  @include reset;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  row-gap: 25px;
+  @media (max-width: 414px) {
+    display: block;
+  }
+}
+
+.page-tracks-item {
+  @include reset;
+  @media (max-width: 414px) {
+    margin-bottom: 25px;
+  }
+}
+
+.page-tracks-item:last-child {
+  @media (max-width: 414px) {
+    margin-bottom: 0;
+  }
+}
+
+
+

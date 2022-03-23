@@ -1,0 +1,28 @@
+.tracks-item {
+  display: flex;
+  align-items: center;
+  .tracks-item-img {
+    margin-right: 15px;
+  }
+  .tracks-length {
+    @include reset;
+    @include tipography(13px, normal, none);
+    margin-left: auto;
+    color: $c-gray;
+  }
+}
+
+.tracks-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  .tracks-text-song {
+    @include tipography(13px, bold, uppercase);
+    color: $c-white;
+  } 
+  .tracks-text-author {
+    @include tipography(13px, normal, none);
+    color: $c-gray;
+  } 
+}

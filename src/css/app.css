@@ -216,19 +216,19 @@ body {
 
 @media (max-width: 414px) {
   .main-nav-list-item:nth-child(1) a {
-    color: #E0E0E0;
-  }
-}
-
-@media (max-width: 414px) {
-  .main-nav-list-item:nth-child(2) a {
     color: #CACACA;
   }
 }
 
 @media (max-width: 414px) {
+  .main-nav-list-item:nth-child(2) a {
+    color: #E0E0E0;
+  }
+}
+
+@media (max-width: 414px) {
   .main-nav-list-item:nth-child(3) a {
-    color: #ffffff;
+    color: #E0E0E0;
   }
 }
 
@@ -980,4 +980,116 @@ body {
   .footer-nav-list-item {
     margin-bottom: 16px;
   }
+}
+
+#page-polular-track {
+  padding-top: 100px;
+  background: #08020D;
+}
+
+.page-tracks-heading {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 38px;
+  line-height: 57px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 48px;
+  text-align: center;
+}
+@media (max-width: 414px) {
+  .page-tracks-heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+  }
+}
+
+.page-tracks-list {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  row-gap: 25px;
+}
+@media (max-width: 414px) {
+  .page-tracks-list {
+    display: block;
+  }
+}
+
+.page-tracks-item {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+@media (max-width: 414px) {
+  .page-tracks-item {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 414px) {
+  .page-tracks-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.tracks-item {
+  display: flex;
+  align-items: center;
+}
+.tracks-item .tracks-item-img {
+  margin-right: 15px;
+}
+.tracks-item .tracks-length {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 19.5px;
+  font-weight: normal;
+  text-transform: none;
+  text-decoration: none;
+  margin-left: auto;
+  color: #E0E0E0;
+}
+
+.tracks-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.tracks-text-wrapper .tracks-text-song {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 19.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+.tracks-text-wrapper .tracks-text-author {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 19.5px;
+  font-weight: normal;
+  text-transform: none;
+  text-decoration: none;
+  color: #E0E0E0;
 }
