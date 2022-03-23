@@ -150,6 +150,10 @@ body {
   }
 }
 
+.artist-page #page-description {
+  background-image: url("../images/Morten%20Harket.png");
+}
+
 .main-header {
   position: absolute;
   top: 25px;
@@ -218,7 +222,7 @@ body {
 
 @media (max-width: 414px) {
   .main-nav-list-item:nth-child(2) a {
-    color: #E0E0E0;
+    color: #CACACA;
   }
 }
 
@@ -403,6 +407,45 @@ body {
 .btn-banner {
   width: 100%;
   background-color: #34C176;
+  color: #ffffff;
+}
+
+.artist-page .banner .container {
+  align-items: flex-start;
+}
+@media (max-width: 414px) {
+  .artist-page .banner-heading {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 414px) {
+  .artist-page .banner-text {
+    margin-bottom: 48px;
+  }
+}
+.artist-page .banner-buttons {
+  display: flex;
+}
+@media (max-width: 414px) {
+  .artist-page .banner-buttons {
+    flex-direction: column;
+  }
+}
+.artist-page .btn-play {
+  padding: 20px 95px 20px 67px;
+  background: #5328A1;
+  margin-right: 24px;
+  color: #ffffff;
+}
+@media (max-width: 414px) {
+  .artist-page .btn-play {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
+.artist-page .btn-favorites {
+  padding: 20px 47px 20px 67px;
+  background: #95390C;
   color: #ffffff;
 }
 

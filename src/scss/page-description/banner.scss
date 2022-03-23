@@ -76,3 +76,48 @@
   background-color: $c-green;
   color: $c-white;
 }
+
+.artist-page {
+  .banner .container {
+    align-items: flex-start;
+  }
+
+  .banner-heading {
+    @media (max-width: 414px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .banner-text {
+    @media (max-width: 414px) {
+      margin-bottom: 48px;
+    }
+  }
+
+  .banner-buttons {
+    display: flex;
+    @media (max-width: 414px) {
+      flex-direction: column;
+    }
+  }
+
+  .btn-play {
+    padding: 20px 95px 20px 67px;
+    background: $c-purple;
+    margin-right: 24px;
+    color: $c-white;
+    @media (max-width: 414px) {
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+  }
+
+  .btn-favorites {
+    padding: 20px 47px 20px 67px;
+    background: $c-red;
+    color: $c-white;
+  }
+}
+
+
+
