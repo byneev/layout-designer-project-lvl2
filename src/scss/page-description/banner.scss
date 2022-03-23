@@ -14,6 +14,7 @@
 }
 
 .banner-heading {
+  @include tipography(60px, bold, uppercase);
   text-align: center;
   @media (max-width: 414px) {
     @include tipography(30px, bold, uppercase);
@@ -21,6 +22,7 @@
 }
 
 .banner-subheading {
+  @include tipography(38px, bold, uppercase);
   margin-bottom: 30px;
   @media (max-width: 414px) {
     @include tipography(18px, bold, uppercase);   
@@ -30,7 +32,7 @@
 
 .banner-text {
   @include reset;
-  margin-bottom: 16px;
+  margin-bottom: 48px;
 }
 
 .banner-login {

@@ -8,6 +8,9 @@
   @include tipography(38px, bold, uppercase);
   text-align: left;
   margin-bottom: 48px;
+  @media (max-width: 414px) {
+    @include tipography(18px, bold, uppercase);
+  }
 }
 
 .page-discography-list {

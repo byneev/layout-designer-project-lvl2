@@ -46,7 +46,7 @@
   font-size: 0;
   width: 26px;
   height: 26px;
-  margin-right: 12px;
+  margin-right: 25px;
 
   &::before {
     @include pseudo-element;
@@ -77,7 +77,6 @@
 
 .social-item--fb {
   position: relative;
-  margin-right: 8px;
   &::before {
     background: url("../images/Facebook.png");
     width: 12px;
