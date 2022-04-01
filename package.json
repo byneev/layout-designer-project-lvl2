@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-concat": "^2.6.1"
+  },
   "devDependencies": {
+    "browser-sync": "^2.27.9",
     "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
     "gulp-css-purge": "^3.0.9",
     "gulp-sass": "^5.1.0",
     "sass": "^1.49.9"
