@@ -38,7 +38,7 @@
 .banner-text {
   @include reset;
   @include tipography(16px);
-  margin-bottom: 48px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
@@ -63,14 +63,13 @@
 
   @media (max-width: 414px) {
     flex-direction: column;
-    align-items: stretch;
   }
 }
 
 .banner-login-field {
   @include reset;
   box-sizing: border-box;
-  width: 270px;
+  width: 275px;
   min-height: 50px;
   padding-left: 20px;
   margin-bottom: 1.5rem;
@@ -95,70 +94,70 @@
   color: $c-white;
 }
 
-.artist-page {
-  .banner .container {
+.banner-heading {
+  @media (max-width: 414px) {
+    margin-bottom: 10px;
+  }
+}
+
+.banner-text {
+  @media (max-width: 414px) {
+    margin-bottom: 48px;
+  }
+}
+
+.banner-buttons {
+  display: flex;
+
+  @media (max-width: 414px) {
     align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.banner-buttons .btn {
+  box-sizing: border-box;
+  min-width: 210px;
+}
+
+.btn-play {
+  position: relative;
+  padding: 20px 95px 20px 67px;
+  background: $c-purple;
+  margin-right: 24px;
+  color: $c-white;
+
+  &::before {
+    @include pseudo-element;
+    background-image: url("../images/play-button.svg");
+    color: white;
+    width: 24px;
+    height: 24px;
+    left: 20px;
+    z-index: 1;
+    background-repeat: no-repeat;
   }
 
-  .banner-heading {
-    @media (max-width: 414px) {
-      margin-bottom: 16px;
-    }
+  @media (max-width: 414px) {
+    margin-right: 0;
+    margin-bottom: 24px;
   }
+}
 
-  .banner-text {
-    @media (max-width: 414px) {
-      margin-bottom: 48px;
-    }
-  }
+.btn-favorites {
+  position: relative;
+  padding: 20px 47px 20px 67px;
+  background: $c-red;
+  color: $c-white;
 
-  .banner-buttons {
-    display: flex;
-
-    @media (max-width: 414px) {
-      flex-direction: column;
-    }
-  }
-
-  .btn-play {
-    position: relative;
-    padding: 20px 95px 20px 67px;
-    background: $c-purple;
-    margin-right: 24px;
-    color: $c-white;
-
-    &::before {
-      @include pseudo-element;
-      background-image: url("../images/play-button.svg");
-      color: white;
-      width: 24px;
-      height: 24px;
-      left: 20px;
-      z-index: 1;
-      background-repeat: no-repeat;
-    }
-
-    @media (max-width: 414px) {
-      margin-right: 0;
-      margin-bottom: 24px;
-    }
-  }
-
-  .btn-favorites {
-    position: relative;
-    padding: 20px 47px 20px 67px;
-    background: $c-red;
-    color: $c-white;
-
-    &::before {
-      @include pseudo-element;
-      background-image: url("../images/heart.svg");
-      color: white;
-      width: 24px;
-      height: 24px;
-      left: 20px;
-      z-index: 1;
-      background-repeat: no-repeat;
-    }
+  &::before {
+    @include pseudo-element;
+    background-image: url("../images/heart.svg");
+    color: white;
+    width: 24px;
+    height: 24px;
+    left: 20px;
+    z-index: 1;
+    background-repeat: no-repeat;
   }
 }

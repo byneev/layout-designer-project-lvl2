@@ -4,7 +4,13 @@
   column-gap: 50px;
 
   @media (max-width: 414px) {
-    display: block;
+    grid-template-columns: 1fr;
+  }
+}
+
+.news-info {
+  @media (max-width: 414px) {
+    order: 1
   }
 }
 
@@ -13,6 +19,7 @@
 
   @media (max-width: 414px) {
     margin-bottom: 50px;
+    order: 0;
   }
 }
 
@@ -35,6 +42,7 @@
 }
 
 .news-item-author {
+  @include reset;
   @include tipography(12px, normal, uppercase);
   position: relative;
   padding-left: 35px;
@@ -44,6 +52,7 @@
   &::before {
     @include pseudo-element;
     top: 0;
+    left: 0;
     background: url("../images/avatar.png");
     border-radius: 50%;
     width: 19px;
@@ -52,11 +61,13 @@
 }
 
 .news-item-date {
+  @include reset;
   @include tipography(13px, normal, uppercase);
   color: $c-gray;
 }
 
 .news-author-wrapper {
+  display: flex;
   margin-bottom: 45px;
 }
 

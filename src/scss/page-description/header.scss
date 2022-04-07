@@ -68,23 +68,18 @@ $colors: ($c-gray, $c-dark-gray, $c-white);
 }
 
 .main-nav-list-item--home {
+  display: flex;
   position: relative;
-  padding-left: 40px;
-  margin-right: 50px;
-
-  &::before {
-    @include pseudo-element;
-    background-image: url("../images/logo.svg");
-    width: 24px;
-    height: 24px;
-    top: -6px;
-    left: 0;
-    z-index: 1;
-  }
+  margin-right: 60px;
+  align-items: center;
 
   @media (max-width: 414px) {
     margin-bottom: 20px;
   }
+}
+
+.main-nav-list-item--home img {
+  margin-right: 20px;
 }
 
 .search-form {

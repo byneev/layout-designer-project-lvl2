@@ -8,6 +8,7 @@
   @include tipography(38px, bold, uppercase);
   text-align: left;
   margin-bottom: 48px;
+
   @media (max-width: 414px) {
     @include tipography(18px, bold, uppercase);
   }
@@ -17,12 +18,14 @@
   @include reset;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 50px;
+  column-gap: 40px;
   row-gap: 25px;
+
   @media (max-width: 1199px) {
     grid-template-columns: repeat(auto-fill, 250px);
   }
+
   @media (max-width: 414px) {
-    grid-template-columns: repeat(2, 1fr);    
+    grid-template-columns: repeat(2, 1fr);
   }
 }
