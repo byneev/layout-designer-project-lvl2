@@ -3,8 +3,13 @@
 
 body {
   @include reset;
-  @include tipography();
-  color: $c-white; 
+  @include tipography(16px,
+    $f-weigth-default,
+    $f-decoration,
+    $f-transform,
+    1.5,
+    $f-family-default);
+  color: $c-white;
 }
 
 .container {
@@ -13,6 +18,7 @@ body {
   padding-right: 20px;
   margin: 0 auto;
   background: transparent;
+
   @media (min-width: 1240px) {
     max-width: 1200px;
   }
@@ -23,6 +29,7 @@ body {
 }
 
 .btn {
+  @include reset;
   @include tipography(13px, normal, uppercase, none, 1.2);
   @include flex-standart;
   box-sizing: border-box;
@@ -30,4 +37,10 @@ body {
   align-items: center;
   padding: 20px 30px;
   border-radius: 5px;
+}
+
+ul,
+li,
+form {
+  line-height: 0;
 }

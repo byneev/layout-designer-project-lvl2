@@ -4,7 +4,7 @@
 .banner .container {
   @include flex-standart;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   color: $c-white;
   overflow-x: hidden;
 }
@@ -12,6 +12,7 @@
 .banner-heading,
 .banner-subheading {
   @include reset;
+  text-align: center;
   color: $c-white;
 }
 
@@ -36,12 +37,20 @@
 
 .banner-text {
   @include reset;
+  @include tipography(16px);
   margin-bottom: 48px;
+  text-align: center;
+}
+
+.artist-page .banner-heading,
+.artist-page .banner-text {
+  text-align: left;
 }
 
 .banner-login {
   @include reset;
   width: 565px;
+  align-self: center;
 
   @media (max-width: 414px) {
     width: 100%;
@@ -112,10 +121,22 @@
   }
 
   .btn-play {
+    position: relative;
     padding: 20px 95px 20px 67px;
     background: $c-purple;
     margin-right: 24px;
     color: $c-white;
+
+    &::before {
+      @include pseudo-element;
+      background-image: url("../images/play-button.svg");
+      color: white;
+      width: 24px;
+      height: 24px;
+      left: 20px;
+      z-index: 1;
+      background-repeat: no-repeat;
+    }
 
     @media (max-width: 414px) {
       margin-right: 0;
@@ -124,8 +145,20 @@
   }
 
   .btn-favorites {
+    position: relative;
     padding: 20px 47px 20px 67px;
     background: $c-red;
     color: $c-white;
+
+    &::before {
+      @include pseudo-element;
+      background-image: url("../images/heart.svg");
+      color: white;
+      width: 24px;
+      height: 24px;
+      left: 20px;
+      z-index: 1;
+      background-repeat: no-repeat;
+    }
   }
 }

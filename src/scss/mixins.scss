@@ -1,13 +1,11 @@
 @import 'variables.scss';
 
-@mixin tipography(
-  $font-size: $f-size-default, 
+@mixin tipography($font-size: $f-size-default,
   $font-weight: $f-weigth-default,
   $text-transform: $f-transform,
   $text-decoration: $f-decoration,
-  $line-height-coeff: $f-line-height-coeff, 
-  $font-family: $f-family-default
-  ) {
+  $line-height-coeff: $f-line-height-coeff,
+  $font-family: $f-family-default) {
   font-family: $font-family;
   font-size: $font-size;
   line-height: $font-size * $line-height-coeff;
@@ -51,7 +49,7 @@
   color: $color;
 }
 
-@mixin  h1-mobile($color: $c-white) {
+@mixin h1-mobile($color: $c-white) {
   @include tipography(30px, normal, uppercase);
   color: $color;
 }
@@ -84,4 +82,8 @@
 @mixin adaptive-img {
   width: 100%;
   height: auto;
+}
+
+@mixin element-color($color) {
+  background-image: url('data:image/svg+xml;utf8,<svg ...><g stroke="#{$color}" ... /></g></svg>');
 }

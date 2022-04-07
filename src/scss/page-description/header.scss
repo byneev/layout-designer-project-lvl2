@@ -28,6 +28,7 @@ $colors: ($c-gray, $c-dark-gray, $c-white);
 .main-nav-list {
   @include reset;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   list-style: none;
 
@@ -42,7 +43,12 @@ $colors: ($c-gray, $c-dark-gray, $c-white);
   }
 }
 
-.main-nav-list-item a {
+.main-nav-list-item {
+  @include reset;
+}
+
+.main-nav-list-item a,
+.main-nav-list-item span {
   @include tipography(11px, normal, uppercase, none);
   display: block;
   margin-right: $m-right-m;
@@ -63,9 +69,8 @@ $colors: ($c-gray, $c-dark-gray, $c-white);
 
 .main-nav-list-item--home {
   position: relative;
-  margin-right: 90px;
-  margin-bottom: 20px;
   padding-left: 40px;
+  margin-right: 50px;
 
   &::before {
     @include pseudo-element;
@@ -76,12 +81,15 @@ $colors: ($c-gray, $c-dark-gray, $c-white);
     left: 0;
     z-index: 1;
   }
+
+  @media (max-width: 414px) {
+    margin-bottom: 20px;
+  }
 }
 
 .search-form {
   @include reset;
-  min-width: $search-width;
-  flex-grow: 1;
+  width: $search-width;
   margin-bottom: 0;
   padding-bottom: 0;
 

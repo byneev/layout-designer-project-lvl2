@@ -1,25 +1,24 @@
 #page-app {
   padding-top: 100px;
   background: $c-black;
-  background-image: url("../images/iphone.png");
-  background-repeat: no-repeat;
-  background-position: 90% 70%;
-  @media (max-width: 414px) {
-    background-position: center 160px;
-  }
 }
 
 #page-app .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: minmax(278px, max-content);
+
   @media (max-width: 414px) {
-    display: block;
+    grid-template-columns: 1fr;
   }
 }
 
 .app-content {
   padding-bottom: 100px;
+
+  @media (max-width: 414px) {
+    order: 2;
+  }
 }
 
 .app-heading {
@@ -27,9 +26,9 @@
   @include tipography(38px, bold, uppercase);
   margin-bottom: 65px;
   text-align: center;
+
   @media (max-width: 414px) {
     @include tipography(18px, bold, uppercase);
-    margin-bottom: 340px;
   }
 }
 
@@ -51,4 +50,8 @@
   background: $c-red;
   border-radius: 32px;
   display: inline-block;
+}
+
+.app-image {
+  text-align: center;
 }

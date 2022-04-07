@@ -2,6 +2,7 @@
   margin-bottom: 18px;
   max-width: 250px;
   height: auto;
+
   @media (max-width: 414px) {
     max-width: 137px;
   }
@@ -14,11 +15,13 @@
 }
 
 .discography-text-song {
+  @include reset;
   @include tipography(18px, bold, none, none);
   color: $c-white;
 }
 
 .discography-text-year {
+  @include reset;
   @include tipography(16px, normal, none, none);
   color: $c-gray;
 }
