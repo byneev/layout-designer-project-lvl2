@@ -14,7 +14,7 @@
 
 .similar-text-author {
   @include reset;
-  @include tipography(18px, bold, none, none);
+  @include tipography(18px, bold, capitalize, none);
   display: block;
   text-align: center;
   color: $c-white;

@@ -25,7 +25,7 @@
 
 .news-item-heading {
   @include reset;
-  @include tipography(30px, normal, none);
+  @include tipography(30px, normal, capitalize);
   margin-bottom: 30px;
 
   @media (max-width: 414px) {
@@ -62,7 +62,7 @@
 
 .news-item-date {
   @include reset;
-  @include tipography(13px, normal, uppercase);
+  @include tipography(12.8px, normal, uppercase);
   color: $c-gray;
 }
 

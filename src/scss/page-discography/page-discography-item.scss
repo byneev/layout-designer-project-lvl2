@@ -15,7 +15,7 @@
 
 .discography-text-song {
   @include reset;
-  @include tipography(18px, bold, none, none);
+  @include tipography(18px, bold, capitalize, none);
   color: $c-white;
 }
 

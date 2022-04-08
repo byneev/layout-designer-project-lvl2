@@ -118,12 +118,16 @@
 
 .banner-buttons .btn {
   box-sizing: border-box;
-  min-width: 210px;
 }
 
 .btn-play {
+  min-width: 200px;
+  height: 62px;
   position: relative;
-  padding: 20px 95px 20px 67px;
+  display: flex;
+  justify-content: start;
+  padding-left: 60px;
+  align-items: center;
   background: $c-purple;
   margin-right: 24px;
   color: $c-white;
@@ -146,8 +150,12 @@
 }
 
 .btn-favorites {
+  min-width: 200px;
+  height: 62px;
   position: relative;
-  padding: 20px 47px 20px 67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: $c-red;
   color: $c-white;
 

@@ -1,9 +1,11 @@
 .tracks-item {
   display: flex;
   align-items: center;
+
   .tracks-item-img {
     margin-right: 15px;
   }
+
   .tracks-length {
     @include reset;
     @include tipography(13px, normal, none);
@@ -17,12 +19,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: left;
+
   .tracks-text-song {
+    @include reset;
     @include tipography(13px, bold, uppercase);
     color: $c-white;
-  } 
+  }
+
   .tracks-text-author {
+    @include reset;
     @include tipography(13px, normal, none);
     color: $c-gray;
-  } 
+  }
 }

@@ -7,15 +7,16 @@ $anchors: ("Главная", "Каталог", "Исполнители", "Кон
 $colors: ($c-gray, $c-dark-gray, $c-white);
 
 .main-header {
-  position: relative;
-  margin: 0 auto;
-  margin-bottom: 150px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 25px;
+  left: 50%;
   width: 100%;
+  transform: translateX(-50%);
   background: transparent;
-
-  @media (min-width: 1240px) {
-    max-width: 1200px;
-  }
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-nav {
@@ -83,6 +84,16 @@ $colors: ($c-gray, $c-dark-gray, $c-white);
 
 .main-nav-list-item--home img {
   margin-right: 20px;
+}
+
+.search-form-wrapper {
+  display: flex;
+  justify-content: end;
+  width: 570px;
+
+  @media (max-width: 414px) {
+    width: 100%;
+  }
 }
 
 .search-form {
