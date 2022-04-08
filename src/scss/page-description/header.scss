@@ -7,12 +7,15 @@ $anchors: ("Главная", "Каталог", "Исполнители", "Кон
 $colors: ($c-gray, $c-dark-gray, $c-white);
 
 .main-header {
-  position: absolute;
-  top: 25px;
-  left: 50%;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 150px;
   width: 100%;
-  transform: translateX(-50%);
   background: transparent;
+
+  @media (min-width: 1240px) {
+    max-width: 1200px;
+  }
 }
 
 .main-nav {

@@ -2,12 +2,16 @@
   padding-top: 100px;
   padding-bottom: 100px;
   background: $c-black;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .page-similar-heading {
   @include reset;
   @include tipography(38px, bold, uppercase);
   margin-bottom: 48px;
+
   @media (max-width: 414px) {
     @include tipography(18px, bold, uppercase);
   }
@@ -19,9 +23,11 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 50px;
   row-gap: 25px;
+
   @media (max-width: 1199px) {
     grid-template-columns: repeat(auto-fill, 250px);
   }
+
   @media (max-width: 414px) {
     grid-template-columns: repeat(2, 1fr);
   }

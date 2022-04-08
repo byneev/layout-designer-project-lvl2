@@ -1,13 +1,12 @@
 #page-description {
-  padding-top: 250px;
+  padding-top: 25px;
   padding-bottom: 200px;
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
-
-  @media (max-width: 414px) {
-    padding-top: 250px;
-  }
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .artist-page {
