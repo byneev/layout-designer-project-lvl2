@@ -86,7 +86,10 @@ $colors: ($c-gray, $c-dark-gray, $c-white);
   margin-right: 20px;
 }
 
-.search-form-wrapper {
+.search-form {
+  @include reset;
+  margin-bottom: 0;
+  padding-bottom: 0;
   display: flex;
   justify-content: end;
   width: 570px;
@@ -96,20 +99,10 @@ $colors: ($c-gray, $c-dark-gray, $c-white);
   }
 }
 
-.search-form {
-  @include reset;
-  width: $search-width;
-  margin-bottom: 0;
-  padding-bottom: 0;
-
-  @media (max-width: 414px) {
-    width: 100%;
-  }
-}
-
 .search-form-input {
   @include reset;
   @include tipography(13px, normal, uppercase, none, 1.1);
+  width: $search-width;
   box-sizing: border-box;
   padding: 5px 10px;
   border: 2px solid $c-dark-gray;
