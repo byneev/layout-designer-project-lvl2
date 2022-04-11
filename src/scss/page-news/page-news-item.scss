@@ -29,7 +29,7 @@
   margin-bottom: 30px;
 
   @media (max-width: 414px) {
-    @include tipography(16px, normal, none);
+    @include tipography(16px, normal, capitalize);
     margin-bottom: 16px;
   }
 }

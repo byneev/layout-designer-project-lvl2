@@ -126,11 +126,12 @@
   position: relative;
   display: flex;
   justify-content: start;
-  padding-left: 60px;
+  padding-left: 30px;
   align-items: center;
   background: $c-purple;
   margin-right: 24px;
   color: $c-white;
+  font-size: 12.8px;
 
   &::before {
     @include pseudo-element;
@@ -158,6 +159,7 @@
   align-items: center;
   background: $c-red;
   color: $c-white;
+  font-size: 12.8px;
 
   &::before {
     @include pseudo-element;

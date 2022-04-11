@@ -43,7 +43,7 @@
 }
 
 .btn-app {
-  @include tipography(13px, normal, none);
+  @include tipography(12.8px, normal, none);
   padding: 16px 40px;
   color: $c-white;
   background: $c-red;
