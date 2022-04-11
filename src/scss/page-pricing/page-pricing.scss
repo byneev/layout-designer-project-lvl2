@@ -1,6 +1,6 @@
 #page-pricing {
   background: $c-black;
-  padding-top: 100px;
+  padding-top: 110px;
   max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
@@ -22,7 +22,7 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   grid-auto-rows: 1fr;
   gap: 50px;
   overflow-x: hidden;

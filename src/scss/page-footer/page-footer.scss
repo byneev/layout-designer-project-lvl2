@@ -8,17 +8,25 @@
   color: $c-gray;
 }
 
-.main-footer ul, li, p, h4 {
+.main-footer ul,
+li,
+p,
+h4 {
   @include reset;
   list-style: none;
 }
-.about-nav, .support-nav, .contacts, .social {
+
+.about-nav,
+.support-nav,
+.contacts,
+.social {
   @media (max-width: 414px) {
     margin-bottom: 30px;
   }
 }
 
-.main-footer h4 {
+.main-footer h2 {
+  @include reset;
   @include tipography(18px, bold, uppercase);
   margin-bottom: 15px;
 }
@@ -28,10 +36,12 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 40px;
   margin-bottom: 70px;
+
   @media (max-width: 1199px) {
     grid-template-columns: repeat(auto-fill, 200px);
     row-gap: 20px;
   }
+
   @media (max-width: 414px) {
     display: block;
   }
@@ -57,36 +67,40 @@
 
 .social-item--gl {
   position: relative;
+
   &::before {
     background: url("../images/Google+.png");
     width: 26px;
     height: 17px;
   }
-  
+
 }
 
 .social-item--tw {
   position: relative;
+
   &::before {
     background: url("../images/Twitter.png");
     width: 22px;
     height: 19px;
   }
-  
+
 }
 
 .social-item--fb {
   position: relative;
+
   &::before {
     background: url("../images/Facebook.png");
     width: 12px;
     height: 20px;
   }
-  
+
 }
 
 .social-item--inst {
   position: relative;
+
   &::before {
     background: url("../images/Instagram.png");
     width: 19px;
@@ -103,6 +117,7 @@
   flex-wrap: wrap;
   padding-top: 40px;
   padding-bottom: 50px;
+
   @media (max-width: 414px) {
     flex-direction: column;
   }
@@ -110,6 +125,7 @@
 
 .footer-nav-list-item {
   margin-right: 16px;
+
   @media (max-width: 414px) {
     margin-bottom: 16px;
   }
